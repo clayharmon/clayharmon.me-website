@@ -4,5 +4,156 @@
 
 h1 {
   @apply font-mono;
-  @apply text-4xl;
+  @apply text-2xl;
+  @apply font-light;
+
+  @apply md:text-4xl;
+}
+
+h2 {
+  @apply font-mono;
+  @apply text-2xl;
+  @apply font-light;
+}
+
+h3 {
+  @apply font-sans;
+  @apply uppercase;
+  @apply text-xs;
+  @apply font-bold;
+}
+.navlink > a {
+  @apply relative;
+  @apply block;
+  @apply px-4;
+  @apply py-3;
+  @apply lowercase;
+  @apply ml-2;
+}
+
+.navlink > a::before {
+  content: "";
+  @apply absolute;
+  @apply rounded-full;
+  @apply h-3;
+  @apply w-3;
+  @apply bg-white;
+  @apply -left-1;
+  @apply top-2/4;
+  @apply transform;
+  @apply translate-y-3/4;
+  @apply opacity-0;
+  @apply transition-all;
+  @apply duration-300;
+}
+
+.navlink > a:hover::before {
+  @apply -translate-y-2/4;
+  @apply opacity-100;
+}
+
+.link {
+  @apply relative;
+  @apply font-mono;
+  @apply block;
+  @apply pr-10;
+  @apply pl-16;
+  @apply py-3;
+  @apply rounded-full;
+  @apply mt-4;
+  @apply transition-all;
+  @apply duration-300;
+  @apply transform;
+  @apply shadow-xl;
+
+  @apply hover:scale-105;
+  @apply hover:shadow-2xl;
+
+  @apply md:mx-1;
+  @apply md:inline-block;
+
+  @apply lg:mx-2;
+}
+
+.link > .icon {
+  @apply absolute;
+  @apply text-2xl;
+  @apply top-0;
+  @apply left-0;
+  @apply rounded-full;
+  @apply p-3;
+}
+
+.text-shadow {
+  text-shadow: rgb(0 0 0 / 50%) 0px 10px 25px;
+}
+
+.link.github {
+  background-color: #333333;
+}
+
+.link.linkedin {
+  background-color: #2867b2;
+}
+
+.link.twitter {
+  background-color: #1da1f2;
+}
+
+.link.github > .icon {
+  background-color: #545454;
+}
+
+.link.linkedin > .icon {
+  background-color: #4b7eba;
+}
+
+.link.twitter > .icon {
+  background-color: #42aced;
+}
+
+.skill {
+  @apply relative;
+  @apply font-mono;
+  @apply pr-6;
+  @apply pl-14;
+  @apply py-3.5;
+  @apply rounded-full;
+  @apply border-2;
+  @apply border-gray-200;
+  @apply border-solid;
+  @apply text-black;
+  @apply mr-2;
+  @apply mb-2;
+  @apply text-sm;
+  cursor: default;
+}
+
+.skill > .icon {
+  @apply absolute;
+  @apply text-2xl;
+  @apply top-0;
+  @apply left-0;
+  @apply rounded-full;
+  @apply p-3;
+  @apply text-white;
+}
+
+.skill.javascript > .icon {
+  background-color: #f7df1e;
+}
+.skill.nodejs > .icon {
+  background-color: #026e00;
+}
+
+.skill.php > .icon {
+  background-color: #4f5b93;
+}
+
+.skill.wordpress > .icon {
+  background-color: #0073aa;
+}
+
+.skill.reactjs > .icon {
+  background-color: #61dafb;
 }
