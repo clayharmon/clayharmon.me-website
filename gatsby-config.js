@@ -1,9 +1,17 @@
+require("ts-node").register({
+  compilerOptions: {
+    module: "commonjs",
+    target: "es2017",
+  },
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Website",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     {
@@ -30,6 +38,23 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto Mono",
+              variants: ["300", "400", "500"],
+            },
+            {
+              family: "Roboto",
+              variants: ["300", "700"],
+            },
+          ],
+        },
+      },
     },
   ],
 };
