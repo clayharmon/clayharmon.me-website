@@ -5,6 +5,7 @@ import { IndexPageProps } from "../types";
 import Layout from "../layout/Layout";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Projects from "../components/Projects";
 
 export const query = graphql`
   query {
@@ -42,6 +43,21 @@ export const query = graphql`
         }
       }
     }
+    projects: allProjectsJson {
+      nodes {
+        id
+        headline
+        github_url
+        image_thumbnail {
+          alt
+          src {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -49,10 +65,12 @@ const IndexPage = (props: IndexPageProps) => {
   const socials = props.data.socials.nodes;
   const skills = props.data.skills.nodes;
   const jobs = props.data.jobs.nodes;
+  const projects = props.data.projects.nodes;
   return (
     <Layout>
       <Hero socials={socials} />
       <About skills={skills} jobs={jobs} />
+      <Projects projects={projects} />
     </Layout>
   );
 };

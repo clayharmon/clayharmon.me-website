@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import * as Icon from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -11,7 +10,8 @@ const IconAndText: React.FC<IconAndTextProps> = ({
   iconColor = "white",
   iconBgColor = "black",
 }) => {
-  const IconComponent = (Icon as any)[siIcon] as IconType;
+  let IconComponent =
+    typeof siIcon === "string" ? ((Icon as any)[siIcon] as IconType) : siIcon;
   return (
     <>
       <span

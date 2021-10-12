@@ -16,11 +16,11 @@
     "iconcolor": "#4b7eba"
   },
   {
-    "id": "twitter",
-    "name": "Twitter",
-    "icon": "SiTwitter",
-    "url": "https://twitter.com/clayhermon",
-    "bgcolor": "#1da1f2",
-    "iconcolor": "#42aced"
+    "id": "strava",
+    "name": "Strava",
+    "icon": "SiStrava",
+    "url": "https://www.strava.com/athletes/50161956",
+    "bgcolor": "#fc4c01",
+    "iconcolor": "#ff8a58"
   }
 ]

@@ -1,6 +1,7 @@
 import { ImageDataLike } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
 import React from "react";
+import { IconType } from "react-icons";
 
 export interface Skill {
   id: string;
@@ -32,6 +33,20 @@ export interface Job {
     };
   };
 }
+
+export interface Project {
+  id: string;
+  headline: string;
+  github_url: string;
+  image_thumbnail: {
+    alt: string;
+    src: {
+      childImageSharp: {
+        gatsbyImageData: ImageDataLike;
+      };
+    };
+  };
+}
 export interface IndexPageProps extends PageProps {
   data: {
     skills: {
@@ -42,6 +57,9 @@ export interface IndexPageProps extends PageProps {
     };
     jobs: {
       nodes: Job[];
+    };
+    projects: {
+      nodes: Project[];
     };
   };
 }
@@ -60,10 +78,13 @@ export interface AboutSectionSkillsProps {
 export interface AboutSectionJobsProps {
   jobs: Job[];
 }
+export interface ProjectsSectionProps {
+  projects: Project[];
+}
 
 export interface IconAndTextProps {
   label: string;
-  siIcon: string;
+  siIcon: string | IconType;
   iconColor?: string;
   iconBgColor?: string;
 }
@@ -80,4 +101,9 @@ export interface IconButtonProps
   url: string;
   isExternal?: boolean;
   bgColor?: string;
+}
+
+export interface SeoProps {
+  title?: string;
+  description?: string;
 }

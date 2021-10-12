@@ -52,7 +52,8 @@ h3 {
   @apply opacity-100;
 }
 
-.link {
+.link,
+.footer-link {
   @apply relative;
   @apply font-mono;
   @apply block;
@@ -75,7 +76,8 @@ h3 {
   @apply lg:mx-2;
 }
 
-.link > .icon {
+.link > .icon,
+.footer-link > .icon {
   @apply absolute;
   @apply text-2xl;
   @apply top-0;
@@ -84,8 +86,37 @@ h3 {
   @apply p-3;
 }
 
+.footer-link > .icon {
+  border: 0.1rem solid white;
+  padding: 0.6rem;
+}
+
 .text-shadow {
   text-shadow: rgb(0 0 0 / 50%) 0px 10px 25px;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  @apply bg-accent;
+  height: 100px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+#contact::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  @apply bg-accent;
+  height: 100px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
 }
 
 .skill {
@@ -113,4 +144,78 @@ h3 {
   @apply rounded-full;
   @apply p-3;
   @apply text-white;
+}
+
+.project-card {
+  @apply block;
+  @apply relative;
+  @apply p-8;
+  @apply bg-white;
+  @apply shadow-lg;
+  @apply my-8;
+  @apply rounded-3xl;
+  @apply transition-all;
+  @apply duration-300;
+  @apply transform;
+}
+
+.project-card:hover {
+}
+
+.project-card::before {
+  content: "";
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply w-full;
+  @apply h-full;
+  @apply bg-accent;
+  @apply z-10;
+  @apply rounded-3xl;
+  @apply transition-all;
+  @apply duration-300;
+  @apply transform;
+}
+
+.project-card:hover::before {
+  @apply rotate-3;
+}
+
+.project-details {
+  @apply overflow-hidden;
+}
+
+.project-details > h2 {
+  @apply transition-all;
+  @apply duration-200;
+  @apply transform;
+  @apply sm:translate-y-6;
+}
+
+.project-details > h3 {
+  @apply block;
+  @apply transition-all;
+  @apply duration-300;
+  @apply transform;
+  @apply sm:translate-y-8;
+  @apply sm:opacity-0;
+}
+.project-card:hover .project-details > h2 {
+  @apply translate-y-0;
+}
+
+.project-card:hover .project-details > h3 {
+  @apply translate-y-0;
+  @apply opacity-100;
+}
+
+.project-image {
+  @apply transition-all;
+  @apply duration-300;
+  @apply transform;
+  @apply translate-x-8;
+}
+
+.project-card:hover .project-image {
+  @apply translate-x-0;
 }

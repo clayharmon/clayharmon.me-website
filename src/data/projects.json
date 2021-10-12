@@ -1,0 +1,29 @@
+[
+  {
+    "id": "avid-boats",
+    "image_thumbnail": {
+      "alt": "Avid boats - boat builder",
+      "src": "../images/avid-boats-tablet.jpg"
+    },
+    "github_url": "https://github.com/clayharmon/boatbuilder-wp",
+    "headline": "Building your perfect boat just got easier."
+  },
+  {
+    "id": "erciyes-english",
+    "image_thumbnail": {
+      "alt": "Erciyes English - website design",
+      "src": "../images/erciyes-english-tablet.jpg"
+    },
+    "github_url": "https://github.com/erciyes-english/ee-website",
+    "headline": "Learning English with the experts."
+  },
+  {
+    "id": "supporter-care",
+    "image_thumbnail": {
+      "alt": "Supperter Care",
+      "src": "../images/supporter-care-tablet.jpg"
+    },
+    "github_url": "",
+    "headline": "Keeping up with your donors made simple."
+  }
+]

@@ -6,12 +6,6 @@
     "color": "#f7df1e"
   },
   {
-    "id": "typescript",
-    "name": "TypeScript",
-    "icon": "SiTypescript",
-    "color": "#3178c6"
-  },
-  {
     "id": "wordpress",
     "name": "WordPress",
     "icon": "SiWordpress",
@@ -22,6 +16,12 @@
     "name": "React",
     "icon": "SiReact",
     "color": "#61dafb"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "color": "#3178c6"
   },
   {
     "id": "nodejs",
@@ -36,16 +36,16 @@
     "color": "#4F5B93"
   },
   {
-    "id": "mongodb",
-    "name": "MongoDB",
-    "icon": "SiMongodb",
-    "color": "#13aa52"
-  },
-  {
     "id": "ruby",
     "name": "Ruby",
     "icon": "SiRuby",
     "color": "#CC342D"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "icon": "SiMongodb",
+    "color": "#13aa52"
   },
   {
     "id": "vuejs",

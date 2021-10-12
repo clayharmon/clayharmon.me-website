@@ -7,14 +7,22 @@ require("ts-node").register({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Website",
+    siteUrl: "https://clayharmon.me",
+    title: "Clay Harmon",
+    author: "Clay Harmon",
   },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-json",
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+        duration: 700,
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
