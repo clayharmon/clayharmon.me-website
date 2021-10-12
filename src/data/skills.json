@@ -1,0 +1,68 @@
+[
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "icon": "SiJavascript",
+    "color": "#f7df1e"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "icon": "SiTypescript",
+    "color": "#3178c6"
+  },
+  {
+    "id": "wordpress",
+    "name": "WordPress",
+    "icon": "SiWordpress",
+    "color": "#0073aa"
+  },
+  {
+    "id": "reactjs",
+    "name": "React",
+    "icon": "SiReact",
+    "color": "#61dafb"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "icon": "SiNodedotjs",
+    "color": "#5f9f4e"
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "icon": "SiPhp",
+    "color": "#4F5B93"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "icon": "SiMongodb",
+    "color": "#13aa52"
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "icon": "SiRuby",
+    "color": "#CC342D"
+  },
+  {
+    "id": "vuejs",
+    "name": "Vue.js",
+    "icon": "SiVuedotjs",
+    "color": "#4fc08d"
+  },
+  {
+    "id": "gatsbyjs",
+    "name": "Gatsby",
+    "icon": "SiGatsby",
+    "color": "#7026b9"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "icon": "SiPostgresql",
+    "color": "#336791"
+  }
+]

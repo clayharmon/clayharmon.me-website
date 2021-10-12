@@ -1,0 +1,22 @@
+[
+  {
+    "id": "erciyes-english",
+    "image": {
+      "alt": "Erciyes English",
+      "src": "../images/erciyes-english-logo.jpg"
+    },
+    "title": "Web Developer & ESL Instructor",
+    "subtitle": "Erciyes English | Kayseri, Turkey",
+    "description": "Developed website using GatsbyJS and Cloudflare Workers."
+  },
+  {
+    "id": "chartlocal",
+    "image": {
+      "alt": "ChartLocal",
+      "src": "../images/charlocal-logo.jpg"
+    },
+    "title": "Lead Web Developer",
+    "subtitle": "ChartLocal",
+    "description": "Developed and maintained 25+ client websites ranging from custom e-commerce solutions to simple high-converting landing pages."
+  }
+]

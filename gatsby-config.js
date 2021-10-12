@@ -14,6 +14,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -38,6 +39,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: "./src/data/",
+      },
+      __key: "data",
     },
     {
       resolve: `gatsby-plugin-webfonts`,

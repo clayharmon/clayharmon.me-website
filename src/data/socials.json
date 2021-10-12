@@ -1,0 +1,26 @@
+[
+  {
+    "id": "github",
+    "name": "Github",
+    "icon": "SiGithub",
+    "url": "https://github.com/clayharmon",
+    "bgcolor": "#333333",
+    "iconcolor": "#545454"
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "icon": "SiLinkedin",
+    "url": "https://www.linkedin.com/in/johncharmon/",
+    "bgcolor": "#2867b2",
+    "iconcolor": "#4b7eba"
+  },
+  {
+    "id": "twitter",
+    "name": "Twitter",
+    "icon": "SiTwitter",
+    "url": "https://twitter.com/clayhermon",
+    "bgcolor": "#1da1f2",
+    "iconcolor": "#42aced"
+  }
+]
