@@ -20,7 +20,7 @@ const AboutJobs: React.FC<AboutSectionJobsProps> = ({ jobs }) => {
                   <GatsbyImage
                     image={imageData}
                     alt={image.alt}
-                    className="w-14 rounded-full overflow-hidden"
+                    className="w-14 rounded-full overflow-hidden rounded-image-ios"
                   />
                 ) : null}
               </div>
