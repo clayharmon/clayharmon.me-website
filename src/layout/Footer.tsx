@@ -36,7 +36,12 @@ const Footer = () => {
       <div className="bg-accent text-white py-8 font-mono text-center text-sm">
         <p>
           Copyright {new Date().getFullYear()} clayharmon.me{" "}
-          <a className="underline" href="#">
+          <a
+            className="underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/clayharmon/clayharmon.me-website"
+          >
             View Source-&gt;
           </a>
         </p>
