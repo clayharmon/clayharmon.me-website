@@ -14,7 +14,7 @@ const Hero: React.FC<HeroSectionProps> = ({ socials }) => {
       <div className="grid grid-cols-1 max-w-lg mx-auto text-center px-4 md:grid-cols-4 lg:grid-cols-3 md:max-w-screen-lg md:text-left">
         <div>
           <StaticImage
-            className="w-40 rounded-full overflow-hidden shadow-xl mx-auto my-4 md:w-42 lg:w-52"
+            className="w-40 rounded-full overflow-hidden shadow-xl mx-auto my-4 md:w-42 lg:w-52 rounded-image-ios"
             src="../images/clayharmon-profile.jpg"
             alt="Clay Harmon"
             layout="fullWidth"

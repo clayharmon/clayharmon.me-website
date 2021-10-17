@@ -22,6 +22,12 @@ h3 {
   @apply text-xs;
   @apply font-bold;
 }
+
+.rounded-image-ios img,
+.rounded-image-ios > div {
+  border-radius: 100%;
+}
+
 .navlink > a {
   @apply relative;
   @apply block;
