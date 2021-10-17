@@ -17,7 +17,7 @@ const IconButton: React.FC<IconButtonProps> = ({
     href={url}
     style={{ backgroundColor: bgColor }}
     target={isExternal ? "_blank" : "_self"}
-    rel={isExternal ? "norefferer" : ""}
+    rel={isExternal ? "noreferrer" : ""}
     {...remainingProps}
   >
     <IconAndText
