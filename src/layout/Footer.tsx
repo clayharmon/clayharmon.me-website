@@ -1,6 +1,6 @@
 import * as React from "react";
 import IconButton from "../components/IconButton";
-import { FaEnvelope, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
               className="footer-link"
               url="https://twitter.com/messages/compose?recipient_id=380615587"
               label="@clayhermon"
-              siIcon={FaTwitter}
+              siIcon={FaXTwitter}
               bgColor="white"
               iconBgColor="#375ca6"
             />

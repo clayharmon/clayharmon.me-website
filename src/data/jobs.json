@@ -1,5 +1,15 @@
 [
   {
+    "id": "appfolio",
+    "image": {
+      "alt": "AppFolio, Inc.",
+      "src": "../images/appfolio.png"
+    },
+    "title": "Senior Engineer in Payments, Team Lead",
+    "subtitle": "AppFolio, Inc.",
+    "description": "Designed and implemented a robust payment processing system."
+  },
+  {
     "id": "erciyes-english",
     "image": {
       "alt": "Erciyes English",
